@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pytesseract
+opencv-python-headless
+pandas
+openai
+PyMuPDF
+openpyxl 

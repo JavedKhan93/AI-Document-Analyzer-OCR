@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document Analyzer AI</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>🧾 Document Analyzer AI</h1>
+</header>
+
+<main>
+  <section id="upload-section">
+    <label for="file-upload" class="upload-label">
+      <i class="fas fa-upload"></i> Upload Document (PDF or Image)
+    </label>
+    <input type="file" id="file-upload" accept=".pdf,.png,.jpg,.jpeg" hidden>
+    <div id="file-preview"></div>
+  </section>
+
+  <button id="process-btn"><i class="fas fa-cogs"></i> Process Document</button>
+  <div id="status"></div>
+
+  <section id="tables-section">
+    <h2>📋 Extracted Data</h2>
+    <div id="tables-container"></div>
+  </section>
+
+  <section id="charts-section">
+    <h2>📊 Cost Breakdown</h2>
+    <canvas id="barChart"></canvas>
+    <canvas id="pieChart"></canvas>
+  </section>
+
+  <section id="chat-section">
+    <h2>💬 Chat with Document</h2>
+    <div id="chat-container"></div>
+    <div class="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Ask a question...">
+      <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </section>
+
+  <button id="download-btn"><i class="fas fa-download"></i> Download Excel Report</button>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
