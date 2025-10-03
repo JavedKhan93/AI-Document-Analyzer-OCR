@@ -1,8 +1,4 @@
-# AI-Document-Analyzer-OCR
-An intelligent full-stack web application that uses OCR and an AI chatbot to extract, analyze, and answer questions about uploaded invoices and PDF documents.
-
 # 🧾 AI Document Analyzer
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
