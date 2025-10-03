@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formData.append('file', fileUpload.files[0]);
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/process-document/', { method: 'POST', body: formData });
+            const response = await fetch('https://ai-document-analyzer-ocr.onrender.com/', { method: 'POST', body: formData });
             if (!response.ok) throw new Error(`Server error: ${response.statusText}`);
             const data = await response.json();
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chatInput.value = "";
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/chat/', {
+            const response = await fetch('https://ai-document-analyzer-ocr.onrender.com/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ question: userQuestion, context: rawTextContext, api_key: apiKey })
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         statusDiv.innerText = "Generating Excel file...";
         try {
-            const response = await fetch('http://127.0.0.1:8000/download-excel/', {
+            const response = await fetch('https://ai-document-analyzer-ocr.onrender.com/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ header_data: latestHeaderData, line_items: latestLineItems })
