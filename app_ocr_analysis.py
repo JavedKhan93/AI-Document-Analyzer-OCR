@@ -24,19 +24,9 @@ def get_openai_response(question, context, api_key):
                 "content": """You are an expert financial assistant who reads and understands invoice documents.
                             Based *only* on the text provided below, answer the user's question accurately.
 
-                            **VERY IMPORTANT FORMATTING RULES:**
-                            - Always format your final response using Markdown.
-                            - When providing multiple pieces of data, use bullet points (`*`).
-                            - Use bold text (`**label**`) for the names of the fields (e.g., `**Unit Price:**`).
-                            - Ensure there are proper spaces between all words, numbers, and sentences.
+                         
 
-                            Example of a good response:
-                            'Based on the invoice, here are the details for Titanium dioxide:
-                            * **Unit Price:** 10.25
-                            * **Quantity:** 25
-                            * **Total Amount:** 256.25'
-
-                            If the information is not in the text, say 'I could not find that information in the document.'"""
+                           
             },
             {
                 "role": "user",
@@ -222,4 +212,5 @@ if uploaded_file is not None:
                     with st.spinner("Thinking..."):
                         response = get_openai_response(prompt, st.session_state.raw_text, openai_api_key)
                         st.markdown(response)
+
                 st.session_state.messages.append({"role": "assistant", "content": response})
