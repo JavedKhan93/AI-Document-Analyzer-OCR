@@ -8,6 +8,7 @@
 An intelligent full-stack web application that uses OCR and an AI chatbot to extract, analyze, and answer questions about uploaded invoices and PDF documents.
 
 **Live Demo Link:- https://ai-invoice-analyzer87.netlify.app/
+![Project Demo GIF]:- https://github.com/JavedKhan93/AI-Document-Analyzer-OCR/blob/main/demo_1.gif
 
 ---
 
