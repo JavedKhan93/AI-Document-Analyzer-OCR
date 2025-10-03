@@ -11,7 +11,7 @@ An intelligent full-stack web application that uses OCR and an AI chatbot to ext
 
 An intelligent full-stack web application that uses OCR and an AI chatbot to extract, analyze, and answer questions about uploaded invoices and PDF documents.
 
-**Live Demo Link:** [Link will be added here after we deploy the project!]
+**Live Demo Link:- https://ai-invoice-analyzer87.netlify.app/
 
 ---
 
@@ -66,4 +66,5 @@ This project has a separate backend and frontend, so you will need to run them i
 
 ## 👤 Contact
 
-[YOUR NAME] - [YOUR LINKEDIN URL]
+JAVED AHMED KHAN 
+LINKEDIN:- https://www.linkedin.com/in/javed-ahmed-khan/
