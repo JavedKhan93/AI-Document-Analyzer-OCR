@@ -127,4 +127,5 @@ async def download_excel(request: ExcelRequest):
         'Content-Disposition': f'attachment; filename="invoice_{request.header_data.get("Invoice Number", "report")}.xlsx"'
     }
     return StreamingResponse(output, headers=headers,
+
                              media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
