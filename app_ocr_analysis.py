@@ -214,3 +214,4 @@ if uploaded_file is not None:
                         st.markdown(response)
 
                 st.session_state.messages.append({"role": "assistant", "content": response})
+
